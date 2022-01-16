@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CreateStudios < ActiveRecord::Migration[7.0]
   def change
     create_table :studios do |t|
@@ -10,7 +12,6 @@ class CreateStudios < ActiveRecord::Migration[7.0]
       t.string :phone
       t.string :email
       t.string :website
-      
 
       t.timestamps
     end

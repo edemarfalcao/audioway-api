@@ -1,11 +1,13 @@
-require "test_helper"
+# frozen_string_literal: true
 
-class V1::StudiosControllerTest < ActionDispatch::IntegrationTest
+require 'test_helper'
 
-  def index 
-    @studios = Studio.all
+module V1
+  class StudiosControllerTest < ActionDispatch::IntegrationTest
+    def index
+      @studios = Studio.all
 
-    render json: @contacts, status: 200
-  end  
-
+      render json: @contacts, status: 200
+    end
+  end
 end
